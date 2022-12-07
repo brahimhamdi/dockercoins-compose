@@ -1,0 +1,18 @@
+services:
+  redis:
+    image: redis
+    container_name: redis
+  webui:
+    image: brahimhamdi/webui:1.0
+    container_name: webui
+    ports:
+      - "8000:80"
+  worker:
+    image: worker ...
+    container_name: worker
+  rng:
+    image: rng ...
+    container_name: rng
+  hasher:
+    image: hasher ...
+    container_name: hasher
